@@ -60,6 +60,7 @@ ul li {
   cursor: pointer;
   font-size: 18px;
   position: relative;
+  word-wrap: break-word;
 }
 
 ul li::before {
