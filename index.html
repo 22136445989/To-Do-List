@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To do list</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="icons/checklist.png">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="/To-Do-List/assets/icons/shopping.png" />
+  </head>
+  <body>
     <div class="container">
-        <div class="window">
-            <h1>Task list <img src="icons/checklist.png"></h1>
-            <!-- <div class="window-btn">
+      <div class="window">
+        <h1>Shop list <img src="assets/icons/shopping.png" /></h1>
+        <!-- <div class="window-btn">
             <button class="theme-dark">Светлая тема</button>
             <button class="theme-light">Тёмная тема</button>
             </div> -->
-            <div class="str">
-                <input type="text" id="input-box" placeholder="Add your task">
-                <button onclick="addTask()" class="add">Add</button>
-            </div>
-            <ul id="list-container">
-                <!-- <li class="checked">Task 1</li>
+        <div class="str">
+          <input type="text" maxlength="25" id="input-box" placeholder="Add your shop item" />
+          <button onclick="addTask()" class="add">Add</button>
+        </div>
+        <ul id="list-container">
+          <!-- <li class="checked">Task 1</li>
                 <li>Task 2</li>
                 <li>Task 3</li> -->
-            </ul>
-        </div>
+        </ul>
+        <button
+          class="udalit"
+          id="discard"
+          style="display: none"
+          onclick="deleteAll()"
+        >
+          Discard
+        </button>
+      </div>
     </div>
-    <script src="main.js"></script>
-</body>
+    <script src="/To-Do-List/scripts/main.js"></script>
+  </body>
 </html>

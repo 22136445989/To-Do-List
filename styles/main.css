@@ -1,120 +1,129 @@
-.container{
-    width: 100vw;
-    height: 100vh;  
-    background: black;
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: black;
 }
 
-.window{
-    position: relative;
-    width: 100%;
-    max-width: 400px;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
-    border-radius: 20px;
-    background: #fff;
+.window {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 20px;
+  background: #fff;
 }
 
-.window h1{
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+.window h1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.window h1 img{
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
+.window h1 img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
 }
 
-.str{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 30px;
-    background: #edeef0;
-    padding-left: 20px;
-    margin-bottom: 25px;
+.str {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  background: #edeef0;
+  padding-left: 20px;
+  margin-bottom: 25px;
 }
 
-input{
-    flex: 1;
-    border: none;
-    background: transparent;
-    outline: none;
-    padding: 10px;
+input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 10px;
 }
 
-.add{
-    border: none;
-    outline: none;
-    padding: 10px 50px;
-    background: #f54b38;
-    color: #fff;
-    border-radius: 40px;
-    cursor: pointer;
+.add {
+  border: none;
+  outline: none;
+  padding: 10px 50px;
+  background: #f54b38;
+  color: #fff;
+  border-radius: 40px;
+  cursor: pointer;
 }
 
-ul li{
-    list-style: none;
-    padding: 12px 8px 12px 50px;
-    cursor: pointer;
-    font-size: 18px;    
-    position: relative;
+ul li {
+  list-style: none;
+  padding: 12px 8px 12px 50px;
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
 }
 
-ul li::before{
-    content: '';
-    position: absolute;
-    height: 28px;
-    width: 28px;
-    background-image: url(/icons/checkbox.svg);
-    background-size: cover;
-    background-position: center;
-    top: 8px;
-    left: 12px;
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  background-image: url(/To-Do-List/assets/icons/checkbox.svg);
+  background-size: cover;
+  background-position: center;
+  top: 8px;
+  left: 12px;
 }
 
-ul li.checked{
-    color: #555;
-    text-decoration: line-through;
-
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
 }
 
-ul li.checked::before{
-    background-image: url(/icons/checkbox-checked.svg);
+ul li.checked::before {
+  background-image: url(/To-Do-List/assets/icons/checkbox-checked.svg);
 }
 
-ul li span{
-    position: absolute;
-    right: 0;
-    top: 5px;
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    line-height: 34px;
-    text-align: center;
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
 }
 
-ul li span:hover{
-    background: #edeef0;
+ul li span:hover {
+  background: #edeef0;
 }
 
-.window-btn{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    right: 10px;
-
+.window-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 10px;
 }
 
-.theme-dark{
+.udalit {
+  display: none;
+  border: none;
+  outline: none;
+  padding: 10px 50px;
+  margin: 25px 0 0 100px;
+  background: #f54b38;
+  color: #fff;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+/* .theme-dark{
     position: absolute;
 }
 
 .theme-light{
     position: absolute;
-}
-
+} */
 
 /* .input-z{
     display: flex;
@@ -122,7 +131,3 @@ ul li span:hover{
     align-items: center;
     margin-top: 50px;
 } */
-
-
-
-

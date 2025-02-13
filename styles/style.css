@@ -1,4 +1,3 @@
-@import url(header.css);
 @import url(main.css);
 
 *{
@@ -6,6 +5,6 @@
     padding: 0;
     color: rgb(0, 0, 0);
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
