@@ -1,7 +1,7 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background: black;
+  background: rgb(90, 85, 85);
 }
 
 .window {
@@ -11,7 +11,7 @@
   margin: 100px auto 20px;
   padding: 40px 30px 70px;
   border-radius: 20px;
-  background: #fff;
+  background: #e2d0d0;
 }
 
 .window h1 {
@@ -48,7 +48,7 @@ input {
   border: none;
   outline: none;
   padding: 10px 50px;
-  background: #f54b38;
+  background: #e2695c;
   color: #fff;
   border-radius: 40px;
   cursor: pointer;
@@ -96,7 +96,7 @@ ul li span {
 }
 
 ul li span:hover {
-  background: #edeef0;
+  background: #afb1b6;
 }
 
 .window-btn {
@@ -112,7 +112,7 @@ ul li span:hover {
   outline: none;
   padding: 10px 50px;
   margin: 25px 0 0 100px;
-  background: #f54b38;
+  background: #e2695c;
   color: #fff;
   border-radius: 40px;
   cursor: pointer;
