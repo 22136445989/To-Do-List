@@ -9,13 +9,13 @@ function addTask() {
     let li = document.createElement("li");
     li.innerHTML = inputBox.value;
     listContainer.appendChild(li);
-    let span = document.createElement("span");
+    let span = document.createElement("span"    );
     span.innerHTML = "х";
     li.appendChild(span);
   }
   inputBox.value = "";
   saveData();
-  checkContainer();
+  
 }
 
 listContainer.addEventListener("click", function (joinup) {
