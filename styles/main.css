@@ -1,6 +1,6 @@
 .container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 80vh;
   background: rgb(90, 85, 85);
 }
 
@@ -60,7 +60,11 @@ ul li {
   cursor: pointer;
   font-size: 18px;
   position: relative;
-  word-wrap: break-word;
+  display: flex;
+  padding: 10px;
+  word-break: break-all;
+  align-items: center;
+  justify-content: space-between;
 }
 
 ul li::before {
@@ -96,7 +100,9 @@ ul li span {
 }
 
 ul li span:hover {
-  background: #afb1b6;
+  transform: scale(1.4);
+  transition: all 0.3s ease;
+  color: red;
 }
 
 .window-btn {
