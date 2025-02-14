@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To do list</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="icon" href="assets/icons/shopping.png" />
+    <link rel="icon" href="/To-Do-List/assets/icons/shopping.png" />
   </head>
   <body>
     <div class="container">
@@ -17,59 +17,19 @@
             </div> -->
         <div class="str">
           <input type="text" id="input-box" placeholder="Add your shop item" />
-          <button class="add">Add</button>
-        </div><!DOCTYPE html>
-        <html lang="en">
-          <head>
-            <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>To do list</title>
-            <link rel="stylesheet" href="styles/style.css" />
-            <link rel="icon" href="/To-Do-List/assets/icons/shopping.png" />
-          </head>
-          <body>
-            <div class="container">
-              <div class="window">
-                <h1>Shop list <img src="assets/icons/shopping.png" /></h1>
-                <!-- <div class="window-btn">
-                    <button class="theme-dark">Светлая тема</button>
-                    <button class="theme-light">Тёмная тема</button>
-                    </div> -->
-                <div class="str">
-                  <input type="text" id="input-box" placeholder="Add your shop item" />
-                  <button onclick="addTask()" class="add">Add</button>
-                </div>
-                <ul id="list-container">
-                  <!-- <li class="checked">Task 1</li>
-                        <li>Task 2</li>
-                        <li>Task 3</li> -->
-                </ul>
-                <button
-                  class="udalit"
-                  id="discard"
-                  style="display: none"
-                  onclick="deleteAll()"
-                >
-                  Discard
-                </button>
-                <!-- <button
-                  class="selected"
-                  id="discard-selected"
-                  style="display: none"
-                > Discard selected
-              </button> -->
-              </div>
-            </div>
-            <script src="/To-Do-List/scripts/main.js"></script>
-          </body>
-        </html>
-        
+          <button onclick="addTask()" class="add">Add</button>
+        </div>
         <ul id="list-container">
           <!-- <li class="checked">Task 1</li>
                 <li>Task 2</li>
                 <li>Task 3</li> -->
         </ul>
-        <button class="udalit" id="discard" style="display: none">
+        <button
+          class="udalit"
+          id="discard"
+          style="display: none"
+          onclick="deleteAll()"
+        >
           Discard
         </button>
         <!-- <button
@@ -80,6 +40,6 @@
       </button> -->
       </div>
     </div>
-    <script src="scripts/main.js"></script>
+    <script src="/To-Do-List/scripts/main.js"></script>
   </body>
 </html>
