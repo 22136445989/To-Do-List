@@ -1,22 +1,27 @@
 const inputBox = document.getElementById("input-box");
 let secretB = document.getElementById("discard");
 const listContainer = document.getElementById("list-container");
+let addTask = document.querySelector(".add");
 
-function addTask() {
+
+addTask.addEventListener("click", function() {
+
   if (inputBox.value === "") {
     alert("Write something!");
+
   } else {
     let li = document.createElement("li");
+
     li.innerHTML = inputBox.value;
     listContainer.appendChild(li);
-    let span = document.createElement("span"    );
+    let span = document.createElement("span");
     span.innerHTML = "х";
     li.appendChild(span);
   }
   inputBox.value = "";
   saveData();
-  
-}
+});
+
 
 listContainer.addEventListener("click", function (joinup) {
   if (joinup.target.tagName === "LI") {
@@ -32,9 +37,10 @@ listContainer.addEventListener("click", function (joinup) {
 
 function deleteAll() {
   listContainer.innerHTML = "";
+  checkContainer();
 }
 saveData();
-checkContainer();
+
 
 function checkContainer() {
   if (listContainer.children.length > 0) {
@@ -46,6 +52,7 @@ function checkContainer() {
 saveData();
 checkContainer();
 
+
 function saveData() {
   localStorage.setItem("data", listContainer.innerHTML);
 }
@@ -54,4 +61,3 @@ function showTask() {
   listContainer.innerHTML = localStorage.getItem("data");
 }
 showTask();
-checkContainer();
