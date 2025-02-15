@@ -2,7 +2,7 @@ const inputBox = document.getElementById("input-box");
 let secretB = document.getElementById("discard");
 const listContainer = document.getElementById("list-container");
 let addTask = document.querySelector(".add");
-
+let deleteAll = document.querySelector(".udalit")
 
 addTask.addEventListener("click", function() {
 
@@ -22,7 +22,7 @@ addTask.addEventListener("click", function() {
   saveData();
 
 })
-}
+
 
 
 listContainer.addEventListener("click", function (joinup) {
@@ -36,15 +36,6 @@ listContainer.addEventListener("click", function (joinup) {
   }
 });
 
-function deleteAll() {
-  listContainer.innerHTML = "";
-  checkContainer();
-}
-saveData();
-
-
-=======
-
 
 function checkContainer() {
   if (listContainer.children.length > 0) {
@@ -56,6 +47,19 @@ function checkContainer() {
 saveData();
 
 
+deleteAll.addEventListener("click", function(){
+  listContainer.innerHTML = "";
+  checkContainer();
+})
+
+
+// function deleteAll() {
+//   listContainer.innerHTML = "";
+//   checkContainer();
+// }
+// saveData();
+
+
 function saveData() {
   localStorage.setItem("data", listContainer.innerHTML);
 }
@@ -64,6 +68,5 @@ function showTask() {
   listContainer.innerHTML = localStorage.getItem("data");
 }
 showTask();
-=======
 showTask();
 
