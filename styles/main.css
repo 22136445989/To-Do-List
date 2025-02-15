@@ -68,7 +68,7 @@ ul li::before {
   position: absolute;
   height: 28px;
   width: 28px;
-  background-image: url(/To-Do-List/assets/icons/checkbox.svg);
+  background-image: url(/assets/icons/checkbox.svg);
   background-size: cover;
   background-position: center;
   top: 8px;
@@ -81,7 +81,7 @@ ul li.checked {
 }
 
 ul li.checked::before {
-  background-image: url(/To-Do-List/assets/icons/checkbox-checked.svg);
+  background-image: url(/assets/icons/checkbox-checked.svg);
 }
 
 ul li span {
