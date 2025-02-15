@@ -20,7 +20,9 @@ addTask.addEventListener("click", function() {
   }
   inputBox.value = "";
   saveData();
-});
+
+})
+}
 
 
 listContainer.addEventListener("click", function (joinup) {
@@ -31,7 +33,6 @@ listContainer.addEventListener("click", function (joinup) {
   } else if (joinup.target.tagName === "SPAN") {
     joinup.target.parentElement.remove();
     saveData();
-    checkContainer();
   }
 });
 
@@ -42,6 +43,9 @@ function deleteAll() {
 saveData();
 
 
+=======
+
+
 function checkContainer() {
   if (listContainer.children.length > 0) {
     secretB.style.display = "block";
@@ -50,7 +54,6 @@ function checkContainer() {
   }
 }
 saveData();
-checkContainer();
 
 
 function saveData() {
@@ -61,3 +64,6 @@ function showTask() {
   listContainer.innerHTML = localStorage.getItem("data");
 }
 showTask();
+=======
+showTask();
+
